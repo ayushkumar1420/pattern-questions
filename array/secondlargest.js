@@ -1,15 +1,14 @@
-function secondLargest(arr) {
-    let largest = -Infinity;
-    let second = -Infinity;
-
-    for ( let num of arr) {
-        if ( num > largest){
-            second = largest;
-            largest = num;
-        } else if (num > second && num !== largest) {
-            second = num;
+function secondLargest(arr){
+    let largest = Number.NEGATIVE_INFINITY;
+    let secondLargest = Number.NEGATIVE_INFINITY;
+    for (let i=0; i<arr.length; i++){
+        if(arr[i] > largest){
+            secondLargest = largest;
+            largest = arr[i]
+        } else if ( arr[i] != largest && arr[i] > secondLargest){
+            secondLargest = arr[i]
         }
     }
-    return second;
+    return secondLargest;
 }
-console.log(secondLargest([5,43,6,7,44]));
+console.log(secondLargest([10,5,10]));
