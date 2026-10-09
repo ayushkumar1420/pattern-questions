@@ -1,8 +1,8 @@
 function invertedRight(n){
     for ( let i=0; i<n; i++){
         let row = "";
-        for ( let j=1; j<n+1; j--){
-            row = row + "*";
+        for ( let j=0; j<n-i; j++){
+            row = row + "* ";
         }
         console.log(row)
     }
