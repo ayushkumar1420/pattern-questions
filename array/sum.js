@@ -1,8 +1,8 @@
-function sum(arr){
-    let total = 0;
-    for ( let num of arr){
-        total = total + num;
+function sum(n){
+    let sum=0
+    for( let i=0; i<n.length; i++){
+        sum += n[i]
     }
-    return total;
+    return sum
 }
-console.log(sum([3,2,4]));
+console.log(sum([1,2,3,4,5]));
