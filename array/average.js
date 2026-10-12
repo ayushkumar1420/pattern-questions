@@ -1,8 +1,8 @@
-function average(arr){
-    let avg = 0;
-    for ( let num of arr){
-        avg = avg + num;
+function average(n){
+    if (n.length === 0) return undefined;
+    for (let i=0; i<n.length; i++){
+        avg += n[i]
     }
-    return avg / arr.length;
+    return avg/n.length
 }
-console.log(average([1,2,3,4]));
+console.log(average([]));
