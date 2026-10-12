@@ -1,13 +1,13 @@
-function evenodd(arr) {
+function evenodd(num){
     let even = 0;
     let odd = 0;
-    for ( let num of arr){
-        if ( num%2 === 0){
+    for (let i=0; i<num.length; i++){
+        if (num[i] % 2 === 0){
             even++
         } else {
             odd++
         }
     }
-    return { even, odd };
+    return {even, odd}
 }
-console.log(evenodd([2,3,5,4,6,9]));
+console.log(evenodd([1,2,3,4,5,6,7,8]));
