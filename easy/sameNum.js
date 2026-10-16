@@ -2,9 +2,9 @@ function sameNum(n){
     for ( let i=1; i<=n; i++){
         let row = " "
         for ( let j=0; j<i; j++){
-            row = row + i;
+            row += i;
         }
         console.log(row);
     }
 }
-console.log(sameNum(5));
+console.log(sameNum(10));
